@@ -806,7 +806,7 @@
     }
     
     
-    if (idx != queryCount && !dictionaryArgs) {
+    if (idx != queryCount) {
         NSLog(@"Error: the bind count is not correct for the # of variables (%@) (executeUpdate)", sql);
         sqlite3_finalize(pStmt);
         _isExecutingStatement = NO;
